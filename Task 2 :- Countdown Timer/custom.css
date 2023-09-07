@@ -1,54 +1,80 @@
+/* Roboto font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+/* common styles */
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+  padding: 0;
+  margin: 0;
+  font-size: 1rem;
+  font-family: 'Roboto', sans-serif;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
-.main {
-    width: 100%;
-    height: 100vh;
-    background: url('image/1802071.webp') center center;
-    background-size: cover;
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #111;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: #00ff44;
 }
 
-.overlay {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    background-color: rgba(0, 0, 0, 0.7);
+button {
+  padding: 7px 15px;
+  border: none;
+  outline: none;
+  border-radius: 4px;
 }
 
-.title {
-    margin-top: 10px;
-    color: white;
-    text-align: center;
-    font-size: 2.5rem;
+button:hover {
+  cursor: pointer;
+  background-color: #ffff00;
+}
+/* common styles end */
+
+/* form */
+.form {
+  margin: 90px 0px 20px 0px;
 }
 
-.col {
-    margin-top: 20px;
-    width: 90%;
-    display: flex;
-    justify-content: center;
-    color: white;
+.time-input {
+  padding: 10px 7px;
+  border: none;
+  outline: none;
+  border-radius: 4px;
 }
 
-.col div {
-    width: 250px;
-    text-align: center;
+select[name='format'] {
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  margin: 0px 10px;
+  background-color: #00ff44;
 }
 
-input {
-    width: 50%;
-    background-color: rgba(255, 255, 255, 0.9);
-    border-color: transparent;
-    border-radius: 5px;
-    height: 50px;
-    text-align: center;
-    font-size: 30px;
+.set-btn {
+  background-color: #00ff44;
 }
+/* form styles end */
+
+/* countdown */
+.countdown {
+  font-size: 6.5rem;
+  margin-top: 20px;
+}
+/* countdown styles end */
+
+/* buttons */
+.stop-btn {
+  padding: 10px 20px;
+  background-color: #ff6344;
+}
+
+.reset-btn {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: rgb(0, 174, 255);
+}
+/* buttons styles end */
